@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stung Upon Gap</title>
+  <link rel="stylesheet" href="first.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="head">
+    <nav class="header-nav">
+      <ul class="nav-links">
+        <li class="nav-item"><button onclick="scrollToSection('classes')">Classes</button></li>
+        <li class="nav-item"><button onclick="scrollToSection('vision')">About</button></li>
+        <li class="nav-item address">224 Nostrand Ave, Brooklyn, NY</li>
+        </ul>
+        <div class="logo">Movement Studios.</div>
+    </nav>
+    
+  </header>
+
+  <!-- Hero Section -->
+   <div class="overlay">
+  <section class="hero">
+    <h1 class="bigheading">Find your flow</h1>
+
+    <button id="reserveBtnHero" class="btn">Reserve your spot</button>
+  </section></div>
+
+  <!-- Vision Section -->
+  <section id="vision" class="section fade-in">
+    <h2>About / Our Vision</h2>
+    <p>We aim to inspire everyone through dance and movement.</p>
+    <img src="danielle-cerullo-3ckWUnaCxzc-unsplash.jpg" alt="C:\Users\hp\Desktop\cdn\danielle-cerullo-3ckWUnaCxzc-unsplash.jpg" class="section-img">
+  </section>
+
+  <!-- Classes Section -->
+  <section id="classes" class="section fade-in">
+    <h2>Classes</h2>
+    <div class="class-cards">
+      <div class="card">
+        <img src="karsten-winegeart-UicC_FIozPc-unsplash.jpg" alt="Hip Hop">
+        <h3>Hip Hop</h3>
+      </div>
+      <div class="card">
+        <img src="ahmad-odeh-JhqhGfX_Wd8-unsplash.jpg" alt="Jazz">
+        <h3>Jazz</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Contact Improvisation">
+        <h3>Contact Improvisation</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founders Section -->
+  <section id="founders" class="section fade-in">
+    <h2>Our Founders</h2>
+    <div class="founders-grid">
+      <div class="founder-card">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Founder 1">
+        <h3>John Doe</h3>
+        <p>Co-founder & Instructor</p>
+      </div>
+      <div class="founder-card">
+        <img src="https://images.unsplash.com/photo-1502764613149-7f1d229e230f?auto=format&fit=crop&w=200&q=80" alt="Founder 2">
+        <h3>Jane Smith</h3>
+        <p>Co-founder & Choreographer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Reserve Your Spot</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Your Name" required>
+        <label>Email:</label>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Movement Studios. All Rights Reserved.</p>
+  </footer>
+
+<script src="first.js"></script>
+</body>
+</html>
