@@ -33,19 +33,27 @@ window.addEventListener('scroll', () => {
   }
 });
 const text = document.getElementById('scrollingText');
+let translateX = 0;
 
 function animateText() {
-  let left = text.offsetLeft;
+  translateX -= 1; // uko igenda gahoro cyangwa vuba
 
-  left -= 2; // Uko amagambo agenda gahoro cyangwa vuba
-
-  if(left + text.offsetWidth < 0){
-    left = window.innerWidth; // Iyo amaze kuva ibumoso, asubira iburyo
+  // Iyo text yose imaze kuva ibumoso, subira iburyo
+  if(-translateX > text.offsetWidth) {
+    translateX = window.innerWidth;
   }
 
-  text.style.left = left + 'px';
+  text.style.transform = `translateX(${translateX}px)`;
   requestAnimationFrame(animateText);
 }
 
 animateText();
+// Optional JS: scroll-based movement
+const content = document.querySelector('.section fade-in');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  content.style.transform = `translateY(${ -scrollY * 0.5 }px)`; // igenda gupfuka
+});
+
+
 
