@@ -1,17 +1,6 @@
-// Modal Logic
-const modal = document.getElementById('modal');
-const reserveBtnHero = document.getElementById('reserveBtnHero');
-const closeModal = document.getElementById('closeModal');
-
-reserveBtnHero.addEventListener('click', () => modal.style.display = 'flex');
-closeModal.addEventListener('click', () => modal.style.display = 'none');
-
-window.addEventListener('click', e => {
-  if(e.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
+document.getElementById("reserveBtnHero").addEventListener("click", function() {
+    window.open("https://stung-upon-gap.figma.site/classes", "_blank");
+  });
 // Scroll Fade-in Animation
 const sections = document.querySelectorAll('.fade-in');
 
@@ -43,3 +32,20 @@ window.addEventListener('scroll', () => {
     navLinks.style.transform = "translateX(0)";
   }
 });
+const text = document.getElementById('scrollingText');
+
+function animateText() {
+  let left = text.offsetLeft;
+
+  left -= 2; // Uko amagambo agenda gahoro cyangwa vuba
+
+  if(left + text.offsetWidth < 0){
+    left = window.innerWidth; // Iyo amaze kuva ibumoso, asubira iburyo
+  }
+
+  text.style.left = left + 'px';
+  requestAnimationFrame(animateText);
+}
+
+animateText();
+

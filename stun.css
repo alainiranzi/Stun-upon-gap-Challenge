@@ -10,20 +10,30 @@ body {
       background-color: #000;
       color: #fff;
       border-bottom: 1px solid #333;
-      
-    }
+  
+}
+
+    
     nav {
       display: flex;
     }
     nav a, nav span {
       text-decoration: none;
       color: #fff;
-      padding: 20px 20px;
+      padding: 30px 25px;
       background-color: #000;
       border-right: 1px solid #333; 
       font-size: 20px;
       display: flex;
       align-items: center;
+      
+    }
+    .chill  {
+      transition: color 0.3s;
+    }
+
+    .chill:hover {
+      color: rgb(63, 63, 28);         /* uhindure ibara ushaka (blue, red, orange...) */
       
     }
     nav a:hover {
@@ -33,13 +43,13 @@ body {
       cursor: default;
     }
     .logo {
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 30px;
+      font-weight: 150px;
       padding: 20px 20px;
       border-right: 1px solid #333; 
-      font-size: 20px;
       display: flex;
-      align-items: center;            
+      align-items: center;     
+      font-style: italic;       
     
     }
     .word {
@@ -48,8 +58,9 @@ body {
     }
 
     .hero {
-      padding: 100px 50px;
-      text-align: right;
+      padding: 5px 50px;
+      text-align:right;
+  ;
   
     }
     .hero h1 {
@@ -57,21 +68,44 @@ body {
       margin-bottom: 20px;
       align-items: flex-start;
       color: white;
+      font-weight: 700;
+    
       
     }
     .btn {
-      background-color: #ff4d4d;
-      color: #fff;
-      padding: 12px 20px;
+      margin-top: 180px;          /* gushyira button munsi cyane */
+      padding: 15px 18px;
+      background-color:powderblue;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor:grabbing;
+      border-radius: 1px;
+      font-size: 1rem;
+      color:black;
+      cursor: pointer;
       transition: background 0.3s;
+      display: inline-block;
+      width: 200px;
     }
     .btn:hover {
-      background-color: #e60000;
-    }
+    background-color:darkmagenta;
+    transform: scale(1.05);
+}
+.banner {
+  width: 100%;
+  overflow: hidden;
+  background-color: blue; /* Ushobora guhindura background niba ushaka */
+  padding: 10px 0;
+  position: relative;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
+  font-weight: normal;
+  color: white; /* Ibara ry'ubururu */
+  position: relative;
+  left: 100%; /* Itangirira iburyo bw'urupapuro */
+}
 
 .nav-links {
   display: flex;
@@ -107,7 +141,7 @@ body {
 
 }
 
-/* Hero */
+
 .hero {
   height: 90vh;
   background: url(hudson-hintze-pzgn0feLJwg-unsplash.jpg) center/cover no-repeat;
@@ -117,37 +151,11 @@ body {
   align-items: left;
   text-align: left;
 }
-
-.bigheading {
-    font-size: 5rem;
-    font-weight: bold;
-    color: white;
-  text-orientation: left,
-}
 .overlay {
   align-items: Left;
 }
-
-.btn {
-  background-color: #f39c12;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  transition: transform 0.2s, background-color 0.3s;
-  align-items: left;
-  padding: 0%;
-}
-
-.btn:hover {
-  background-color: #e67e22;
-  transform: scale(1.05);
-}
-
-/* Sections */
 .section {
-  padding: 80px 50px;
+  padding: 10px 50px;
   text-align: center;
   opacity: 0;
   transform: translateY(50px);
