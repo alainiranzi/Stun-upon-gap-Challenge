@@ -40,7 +40,7 @@ body {
     }
 
     .chill:hover {
-      color: rgb(63, 63, 28);         /* uhindure ibara ushaka (blue, red, orange...) */
+      color: rgb(63, 63, 28);         
       
     }
     nav a:hover {
@@ -68,7 +68,8 @@ body {
       padding: 20px;
       padding-top: 70px;
       text-align:right;
-  ;
+       position: sticky; /* iguma aho iri */
+       top: 0;
   
     }
     .hero h1 {
@@ -77,9 +78,8 @@ body {
       align-items: flex-start;
       color: white;
       font-weight: 700;
-    
-      
     }
+  
     .btn {
       margin-top: 180px;          /* gushyira button munsi cyane */
       padding: 15px 18px;
@@ -104,6 +104,10 @@ body {
   padding: 10px 0; /* shyiramo px, ntabwo ari 10 0 gusa */
   position: relative;
 }
+  .banner, .sectiontwo-wrapper {
+  position: relative;
+  z-index: 2;
+}
 
 .scrolling-text {
   display: inline-block;
@@ -113,6 +117,7 @@ body {
   color: white; 
   position: relative;
   left: 0; /* Hano tuzatangira ku mwanya wuzuye */
+  
 }
 
 
@@ -265,3 +270,147 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* --- Section --- */
+.sectiontwo {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+}
+
+/* Ibumoso (Vision) */
+.section-left {
+  flex: 1;
+  background: url('ahmad-odeh-JhqhGfX_Wd8-unsplash.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  color:white;
+  min-height: 300px;
+  position: relative;
+  ;
+}
+
+.section-left h1 {
+  margin: 20px;
+  font-size: 6rem;
+  font-weight: 1000;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  justify-content: left;
+  align-items: left;
+  height: 300px;
+}
+
+
+/* Iburyo (Who We Are) */
+.section-right {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.section-right h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.section-right p {
+  margin: 20px 0;
+  font-size: 1rem;
+  font-style:normal;
+  text-align: left;
+  line-height: 1.8; 
+  max-width: 700px; 
+  margin: 0 auto;   
+}
+
+.btntwo {
+  padding: 10px 30px;
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  width: fit-content;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.btntwo:hover {
+  background: darkblue;
+}
+
+/* About Section */
+#about {
+  padding: 60px 20px;
+  background: #eee;
+  text-align: center;
+}
+.divider-left {
+   flex: 1;
+  background: url('danielle-cerullo-3ckWUnaCxzc-unsplash.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  color:white;
+  min-height: 300px;
+  position: relative;
+  ;
+}
+
+.divider-left h1 {
+  margin: 20px;
+  font-size: 6rem;
+  font-weight: 800;
+  justify-content: left;
+  align-items: left;
+  height: 300px;
+}
+
+
+/* Iburyo (Who We Are) */
+.divider-right {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.divider-right h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.divider-right p {
+  margin: 20px 0;
+  font-size: 1rem;
+  font-style:normal;
+  text-align: left;
+  line-height: 1.8; 
+  max-width: 700px; 
+  margin: 0 auto;   
+}
+
+.sectionthree {
+  padding-top:0px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+}
+
+
+

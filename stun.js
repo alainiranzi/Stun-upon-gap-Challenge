@@ -27,7 +27,7 @@ const navLinks = document.querySelector('.nav-links');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    navLinks.style.transform = "translateX(20px)"; // items iburyo bimove gahoro
+    navLinks.style.transform = "translateX(10px)"; // items iburyo bimove gahoro
   } else {
     navLinks.style.transform = "translateX(0)";
   }
@@ -54,6 +54,19 @@ window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   content.style.transform = `translateY(${ -scrollY * 0.5 }px)`; // igenda gupfuka
 });
+
+window.addEventListener('scroll', function() {
+  const banner = document.querySelector('.banner');
+  const wrapper = document.querySelector('.sectiontwo-wrapper');
+  const sectionthreewrapper = document.querySelector('.sectionthree');
+  const scroll = window.scrollY;
+
+  // Banner na sectiontwo-wrapper bizamuka icyarimwe, ipfuka hejuru ya hero
+  banner.style.transform = `translateY(${-scroll * 0.3}px)`;
+  wrapper.style.transform = `translateY(${-scroll * 0.3}px)`;
+});
+
+
 
 
 
