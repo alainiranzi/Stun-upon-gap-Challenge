@@ -48,23 +48,21 @@ function animateText() {
 }
 
 animateText();
-// Optional JS: scroll-based movement
-const content = document.querySelector('.section fade-in');
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  content.style.transform = `translateY(${ -scrollY * 0.5 }px)`; // igenda gupfuka
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.banner, .sectiontwo-wrapper, .sectionthree-wrapper, .founders-section');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+  
+
+    sections.forEach(section => {
+      section.style.transform = `translateY(${Math.max(-scrollTop, -document.querySelector('.hero').offsetHeight)}px)`;
+
+    });
+  });
 });
 
-window.addEventListener('scroll', function() {
-  const banner = document.querySelector('.banner');
-  const wrapper = document.querySelector('.sectiontwo-wrapper');
-  const sectionthreewrapper = document.querySelector('.sectionthree');
-  const scroll = window.scrollY;
 
-  // Banner na sectiontwo-wrapper bizamuka icyarimwe, ipfuka hejuru ya hero
-  banner.style.transform = `translateY(${-scroll * 0.3}px)`;
-  wrapper.style.transform = `translateY(${-scroll * 0.3}px)`;
-});
+
 
 
 
