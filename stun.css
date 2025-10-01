@@ -68,7 +68,7 @@ body {
       padding: 20px;
       padding-top: 70px;
       text-align:right;
-       position: sticky; /* iguma aho iri */
+       position: sticky; 
        top: 0;
   
     }
@@ -81,7 +81,7 @@ body {
     }
   
     .btn {
-      margin-top: 180px;          /* gushyira button munsi cyane */
+      margin-top: 180px;          
       padding: 15px 18px;
       background-color:powderblue;
       border: none;
@@ -101,7 +101,7 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: blue; 
-  padding: 10px 0; /* shyiramo px, ntabwo ari 10 0 gusa */
+  padding: 10px 0; 
   position: relative;
 }
   .banner, .sectiontwo-wrapper {
@@ -116,7 +116,7 @@ body {
   font-weight: normal;
   color: white; 
   position: relative;
-  left: 0; /* Hano tuzatangira ku mwanya wuzuye */
+  left: 0; 
   
 }
 
@@ -199,7 +199,7 @@ body {
 
 
 
-/* --- Section --- */
+
 .sectiontwo {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +209,7 @@ body {
   flex: 1;
 }
 
-/* Ibumoso (Vision) */
+
 .section-left {
   flex: 1;
   background: url('ahmad-odeh-JhqhGfX_Wd8-unsplash.jpg') center/cover no-repeat;
@@ -233,7 +233,7 @@ body {
 }
 
 
-/* Iburyo (Who We Are) */
+
 .section-right {
   flex: 1;
   background-color: white;
@@ -278,7 +278,7 @@ body {
   background: darkblue;
 }
 
-/* About Section */
+
 #about {
   padding: 60px 20px;
   background: #eee;
@@ -306,7 +306,7 @@ body {
 }
 
 
-/* Iburyo (Who We Are) */
+
 .divider-right {
   flex: 1;
   background-color: white;
@@ -343,91 +343,206 @@ body {
   min-height: 70vh;
   flex: 1;
 }
+
 .founders-section {
   display: flex;
-  min-height: 100vh;
+  min-height: auto;
+  width: 100%;
 }
 
-/* Left Part */
+
 .left-part {
-  flex: 1;
+  flex: 0 0 42%;
   background: white;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  padding-top: 50px;
-  padding-left: 30px;
-  
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 30px;
 }
 
 .left-part h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-top: 100px;
   font-weight: 600;
-  padding-bottom: 100px;
-  font-style: bold;
 }
 
 .left-part .quote {
   font-size: 1.3rem;
   font-style: italic;
-  text-align: center;
-  margin-bottom: 10px;
- 
+  text-align: left;
+  margin-top: 300px;
+  font-weight: bold;
 }
 
 .left-part .author {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size:1rem;
+  font-style: italic ;
   color: #333;
-  padding-bottom: 100px;
-  padding-left: 30px;
+  margin-bottom:100px;
 
 }
 
-/* Right Part */
+
 .right-part {
-  flex: 1;
+  flex: 0 0 58%;
   display: flex;
   flex-direction: column;
 }
 
-/* Top image */
+
 .top-image {
   flex: 1;
   background: url('new.jpg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 10px;
-  color: white;
+  position: relative; 
 }
+
 
 .text-over {
-  background: rgba(0,0,0,0.5);
-  padding: 1px;
-  border-radius: 10px;
+  position: absolute;
+  bottom: 0;            
+  left: 0;
+  width: 100%;            
+  background-color:magenta;
+  padding: 15px 0;
+  text-align: left;
+  color: black;
+  padding-left: 10px;
+}
+.text-over h3 {
+  font-style: bold;
+  font-weight: 400;
 }
 
-/* Bottom image */
 .bottom-image {
   flex: 1;
   background: url('hudson-hintze-pzgn0feLJwg-unsplash.jpg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1px;
-  
+  position: relative; 
 }
 
 .text-under {
-   background-color: fuchsia;
-  padding: 10px;
-  border-radius: 10px;
+  position: absolute;
+  bottom: 0;              
+  left: 0;
+  width: 100%;            
+  background-color:cyan;
+  padding: 15px 0;
+  text-align: left;
+  color: black;
+  padding-left: 10px;
+}
+.text-over h3 {
+  font-style: bold;
+  font-weight: 400;
+}
+.blues {
+  background-color: blue;
+  color: white;
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-left:100px;
+  padding-right:100px;
+  text-align: left;
+  
+}
+.blues h1 {
+  font-weight: 200px;
+}
+  
+
+.dembele {
+  display: flex;
+  min-height: 40vh;
+  width: 100%;
+}
+
+.btnn {
+  margin-bottom: 80px;          
+  padding: 16px 18px;
+  background-color: powderblue;
+  border: none;
+  border-radius: 1px;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block;
+  width: 200px;
+  text-align: center;  
+}
+.btnn:hover {
+  background-color: darkmagenta;
+  transform: scale(1.05);
+  color: white;
 }
 
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #c6f6f6;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
 
+
+.footer-left h1 {
+  font-size: 6rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.footer-center, .footer-right {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: black;
+  text-decoration: underline;
+}
+
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  min-height: 40vh;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+ 
+}
+
+
+.bottom-link {
+  flex: 1;
+  padding: 25px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-link.blue {
+  background-color: #164BFF; 
+}
+
+.bottom-link.black {
+  background-color: #000; 
+}
+
+.bottom-link.pink {
+  background-color: #FF00FF; 
+}
+.bottom-link.pink :hover {
+  background: #d482d4;
+}
+
+.bottom-link:hover {
+  opacity: 0.8;
+} 
 
 
