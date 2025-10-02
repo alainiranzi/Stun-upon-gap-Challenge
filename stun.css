@@ -3,6 +3,7 @@ body {
       font-family: Arial, sans-serif;
       background: #f2f2f2;
       padding-top: 30px;
+      height: 100%;
      }
     header {
     display: flex;
@@ -69,7 +70,7 @@ body {
       padding-top: 70px;
       text-align:right;
        position: sticky; 
-       top: 0;
+       
   
     }
     .hero h1 {
@@ -106,7 +107,7 @@ body {
 }
   .banner, .sectiontwo-wrapper {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .scrolling-text {
@@ -450,11 +451,6 @@ body {
 }
   
 
-.dembele {
-  display: flex;
-  min-height: 40vh;
-  width: 100%;
-}
 
 .btnn {
   margin-bottom: 80px;          
@@ -511,8 +507,8 @@ body {
   width: 100%;
   text-align: center;
   min-height: 40vh;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
  
 }
 

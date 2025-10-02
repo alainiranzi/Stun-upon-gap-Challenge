@@ -1,71 +1,39 @@
+
 document.getElementById("reserveBtnHero").addEventListener("click", function() {
-    window.open("https://stung-upon-gap.figma.site/classes", "_blank");
-  });
-const sections = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.2
+  window.open("https://stung-upon-gap.figma.site/classes", "_blank");
+});
+document.getElementById("youtubeBtn").addEventListener("click", function() {
+  window.open("https://www.youtube.com/@AlainIranzi", "_blank");
 });
 
-sections.forEach(section => observer.observe(section));
 
-
-function scrollToSection(id) {
-  const section = document.getElementById(id);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
-
-
-const navLinks = document.querySelector('.nav-links');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navLinks.style.transform = "translateX(10px)";
-  } else {
-    navLinks.style.transform = "translateX(0)";
-  }
-});
 const text = document.getElementById('scrollingText');
 let translateX = 0;
 
 function animateText() {
-  translateX -= 1; 
-
-  
-  if(-translateX > text.offsetWidth) {
-    translateX = window.innerWidth;
-  }
-
+  translateX -= 1;
+  if(-translateX > text.offsetWidth) translateX = window.innerWidth;
   text.style.transform = `translateX(${translateX}px)`;
   requestAnimationFrame(animateText);
 }
-
 animateText();
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.banner, .sectiontwo-wrapper, .sectionthree-wrapper, .founders-section, .dembele, .footer, .footer-bottom ');
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-  
+const hero = document.querySelector('.hero');
+const heroHeight = hero.offsetHeight;
+const movingSections = document.querySelectorAll('.banner, .sectiontwo-wrapper, .sectionthree-wrapper, .blues');
 
-    sections.forEach(section => {
-      section.style.transform = `translateY(${Math.max(-scrollTop, -document.querySelector('.hero').offsetHeight)}px)`;
 
-    });document.getElementById("youtubeBtn").addEventListener("click", function() {
-  window.open("https://www.youtube.com/@AlainIranzi", "_blank");
-});
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+
+  movingSections.forEach(section => {
+    if(scrollY < heroHeight){
+     const offset = heroHeight - scrollY;
+      section.style.transform = `translateY(${offset}px)`;
+      section.style.opacity = 0.7 + 0.3 * (scrollY / heroHeight); 
+    } else {
+      section.style.transform = `translateY(0px)`; 
+      section.style.opacity = 1; 
+    }
+    section.style.transition = 'transform 0.2s ease-out, opacity 0.2s ease-out';
   });
 });
-
-
-
-
-
-
-
-
