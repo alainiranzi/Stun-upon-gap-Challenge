@@ -17,9 +17,7 @@ function animateText() {
   requestAnimationFrame(animateText);
 }
 animateText();
-const hero = document.querySelector('.hero');
-const heroHeight = hero.offsetHeight;
-const movingSections = document.querySelectorAll('.banner, .sectiontwo-wrapper, .sectionthree-wrapper, .blues');
+
 
 
 window.addEventListener('scroll', () => {
