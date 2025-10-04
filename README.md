@@ -27,9 +27,6 @@ Welcome to **Stung Upon Gap**, a platform for learning dance, computer skills, E
 - Interactive features like scrolling banners, hero sections, and call-to-action buttons.  
 - Online reservation system for classes via **Reserve Your Spot** button.  
 
-Check out the project live:
-
-[Open `stun.html`](stun.html)
 
 ---
 
