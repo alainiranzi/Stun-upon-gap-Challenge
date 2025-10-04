@@ -51,13 +51,15 @@ Welcome to **Stung Upon Gap**, a platform for learning dance, computer skills, E
 ```bash
 git clone https://github.com/alainiranzi/Stun-upon-gap-Challenge.git
 
+```
 ---
 
 ## **Navigate to the project folder:**
+```bash
 cd Stun-upon-gap-Challenge
-
+```
 Open stun.html:
-
+***
 Option A: double-click stun.html in your file explorer → it opens in your default browser.
 
 Option B: from terminal (Mac/Linux):
@@ -68,8 +70,6 @@ open stun.html
 Option C: from terminal (Windows):
 
 start stun.html
-
-```
 
 ---
 
